@@ -20,7 +20,7 @@ public class HabitController {
 
     @GetMapping("/habits")
     public List<HabitCategory> habitCategories() {
-        //habitCategoryService.createCategories();
+        habitCategoryService.createCategories();
         return habitCategoryRepository.findAll();
 
     }
